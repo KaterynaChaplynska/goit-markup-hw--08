@@ -27,52 +27,18 @@ ul {
     margin: 0;
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-
-    color: $secondaryColor;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-
-    &__part {
-        color: $accentColor;
-    }
-}
+@import '../components/_container';
 
 .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
-
-.button {
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 4px;
-    padding: 10px 32px;
-    border: 0;
-    min-width: 200px;
-    color: $generalColor;
-    background-color: $accentColor;
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .visually-hidden {
@@ -89,17 +55,27 @@ ul {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 
 .section-title {
     color: $mainTitleColor;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .reuse__title {
@@ -110,4 +86,8 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $generalColor;
+
+    &.reuse__title--modified {
+        margin-bottom: 20px;
+    }
 }
