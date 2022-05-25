@@ -1,0 +1,38 @@
+.features {
+    padding-top: 94px;
+
+    .features__list {
+        display: flex;
+    }
+
+    .features__item {
+        width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    .features__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $lightBack;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    .features__title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: $mainTitleColor;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .features__text {
+        line-height: 1.71;
+    }
+}
