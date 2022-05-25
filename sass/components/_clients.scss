@@ -1,15 +1,25 @@
 .client-list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
 
-    .client-list__item:not(:last-child) {
-        margin-right: 30px;
+    &__item {
+        margin: 15px;
+        flex-basis: calc((100% - 4 * 15px) / 2);
+
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 6 * 15px) / 3);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 12 * 15px) / 6);
+        }
     }
 
-    .client-list__link {
+    &__link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 170px;
         height: 92px;
         border-radius: 4px;
         border: 1px solid $mainLinkColor;
@@ -25,7 +35,7 @@
         }
     }
 
-    .client-list__icon {
+    &__icon {
         fill: currentColor;
     }
 }

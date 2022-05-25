@@ -1,7 +1,16 @@
+.our-products {
+    display: none;
+    padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+
 .product {
     display: flex;
 
-    .product__item {
+    &__item {
         position: relative;
 
         &:not(:last-child) {
@@ -9,11 +18,7 @@
         }
     }
 
-    .product__image {
-        display: block;
-    }
-
-    .product__wrapper {
+    &__wrapper {
         position: absolute;
         padding: 27px 0 27px 0;
         left: 0;
