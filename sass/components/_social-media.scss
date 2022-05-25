@@ -16,21 +16,16 @@
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         @media screen and (min-width: 1200px) {
-
             &:hover,
             &:focus {
                 background-color: $accentColor;
                 color: $generalColor;
             }
         }
-
         &.social-media__link--modified {
             background-color: rgba(255, 255, 255, 0.1);
-
             @media screen and (min-width: 1200px) {
-
                 &:hover,
                 &:focus {
                     background-color: $accentColor;

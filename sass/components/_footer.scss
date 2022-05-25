@@ -2,21 +2,17 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $darkBack;
-
     @media screen and (max-width: 1199px) {
         text-align: center;
     }
 }
-
 .container--flexed {
     display: block;
-
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
     }
 }
-
 .address {
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
@@ -27,16 +23,13 @@
     &__item:not(:last-child) {
         margin-bottom: 8px;
     }
-
     &__link {
         text-decoration: none;
         font-style: normal;
         line-height: 1.71;
         color: $secondaryTextColor;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         @media screen and (min-width: 1200px) {
-
             &:hover,
             &:focus {
                 color: $accentColor;
@@ -45,9 +38,7 @@
 
         &.address__link--general {
             color: $generalColor;
-
             @media screen and (min-width: 1200px) {
-
                 &:hover,
                 &:focus {
                     color: $accentColor;
@@ -56,7 +47,6 @@
         }
     }
 }
-
 .tablet-wrap {
     @media screen and (min-width: 768px) {
         display: flex;
@@ -64,42 +54,34 @@
         align-items: baseline;
         margin-bottom: 60px;
     }
-
     @media screen and (min-width: 1200px) {
         margin-bottom: 0;
     }
 }
-
 .join-block {
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
-
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
     }
 }
-
 .form-block {
     @media screen and (min-width: 1200px) {
         margin-left: auto;
     }
 }
-
 .form-wrapper {
     display: block;
-
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
     }
 }
-
 .join-form {
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
-
     &__input {
         margin: 0 auto;
 
@@ -114,24 +96,20 @@
         border-radius: 4px;
         background-color: $darkBack;
         color: $generalColor;
-
         &::placeholder {
             font-style: 16px;
             line-height: 1.25;
             color: rgba(255, 255, 255, 0.6);
         }
-
         @media screen and (min-width: 768px) {
             width: 450px;
         }
-
         @media screen and (min-width: 1200px) {
             width: 358px;
             margin-right: 12px;
         }
     }
 }
-
 .form-btn-icon {
     vertical-align: middle;
     margin-left: 10px;

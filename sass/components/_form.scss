@@ -8,23 +8,19 @@
         flex-direction: column;
         margin-bottom: 10px;
         position: relative;
-
         &:nth-child(4) {
             margin-bottom: 20px;
         }
-
         &:focus-within .form__icon {
             fill: $accentColor;
         }
     }
-
     &__label {
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.01em;
         margin-bottom: 4px;
     }
-
     &__input {
         display: flex;
         width: 100%;
@@ -34,25 +30,21 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         &:focus {
             border-color: $accentColor;
         }
     }
-
     &__icon {
         position: absolute;
         left: 12px;
         top: 50%;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     .textarea {
         display: inline-block;
         resize: none;
         height: 120px;
         padding: 12px 16px;
-
         &::placeholder {
             font-size: 12px;
             line-height: 1.17;
@@ -61,10 +53,8 @@
         }
     }
 }
-
 .button--submit-form {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
         background-color: #188ce8;

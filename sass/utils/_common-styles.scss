@@ -16,23 +16,19 @@ p {
     margin: 0;
     padding: 0;
 }
-
 a {
     text-decoration: none;
 }
-
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 @import '../components/_container';
 
 .is-hidden {
@@ -53,16 +49,13 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-
     @media screen and (min-width: 1200px) {
         padding: 94px 0;
     }
 }
-
 .section-title {
     color: $mainTitleColor;
     font-weight: 700;
@@ -70,14 +63,12 @@ img {
     line-height: 1.18;
     text-align: center;
     margin-bottom: 30px;
-
     @media screen and (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.17;
         margin-bottom: 50px;
     }
 }
-
 .reuse__title {
     display: inline-block;
     font-weight: 700;

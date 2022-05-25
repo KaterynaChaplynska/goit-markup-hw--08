@@ -1,5 +1,4 @@
 @import './button';
-
 .hero {
     padding: 118px 0;
     margin-right: auto;
@@ -12,9 +11,7 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/responsive-jpg/mobile/hero-mobile/hero-480.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/responsive-jpg/mobile/hero-mobile/hero-480-2x.jpg);
     }
@@ -22,27 +19,24 @@
     @media screen and (min-width: 481px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/responsive-jpg/tablet/hero-tablet/header.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
+                    rgba(47, 48, 58, 0.4)
+                ),
                 url(../images/responsive-jpg/tablet/hero-tablet/header@2x.jpg);
         }
     }
-
     @media screen and (min-width: 769px) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/responsive-jpg/desktop/hero-back.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: linear-gradient(
+                    to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
+                    rgba(47, 48, 58, 0.4)
+                ),
                 url(../images/responsive-jpg/desktop/hero-2x.jpg);
         }
     }
@@ -63,11 +57,9 @@
         text-transform: uppercase;
         letter-spacing: 0.06em;
         max-width: 360px;
-
         @media screen and (min-width: 480px) {
             font-size: 26px;
         }
-
         @media screen and (min-width: 1200px) {
             font-size: 44px;
             line-height: 1.36;

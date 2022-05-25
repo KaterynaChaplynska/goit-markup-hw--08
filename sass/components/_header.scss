@@ -1,14 +1,11 @@
 @import './logo';
-
 .header {
     border-bottom: 1px solid #ececec;
 }
-
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     @media screen and (min-width: 1200px) {
         justify-content: start;
     }
@@ -21,21 +18,17 @@
     padding: 0;
     background-color: transparent;
     border: none;
-
     &:hover,
     &:focus {
         color: $accentColor;
     }
-
     &__icon {
         fill: currentColor;
     }
-
     @media screen and (min-width: 768px) {
         display: none;
     }
 }
-
 .menu-close-btn {
     position: absolute;
     top: -38px;
@@ -46,12 +39,10 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
     }
 }
-
 .site-nav {
     display: flex;
     margin-bottom: -1px;
@@ -59,7 +50,6 @@
     &__item:not(:last-child) {
         margin-right: 50px;
     }
-
     &__link {
         display: block;
         padding-top: 32px;
@@ -70,15 +60,12 @@
         text-decoration: none;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         &:hover,
         &:focus {
             color: $accentColor;
         }
-
         &--activ {
             color: $accentColor;
-
             &::after {
                 content: '';
                 display: block;
@@ -98,26 +85,22 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-
     @media screen and (min-width: 1200px) {
         display: flex;
         margin-left: auto;
     }
-
     &__item {
         @media screen and (max-width: 1199px) {
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
         }
-
         @media screen and (min-width: 1200px) {
             &:not(:last-child) {
                 margin-right: 30px;
             }
         }
     }
-
     &__link {
         display: flex;
         align-items: center;
@@ -129,18 +112,15 @@
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
             fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         &:hover,
         &:focus {
             color: $accentColor;
             fill: $accentColor;
         }
     }
-
     &__icon {
         margin-right: 8px;
         fill: currentColor;
-
         @media screen and (min-width: 1200px) {
             margin-right: 10px;
         }
@@ -157,7 +137,6 @@
     padding: 48px 0px;
     background-color: $generalColor;
     display: none;
-
     &.is-open {
         @media screen and (max-width: 767px) {
             display: block;
@@ -172,7 +151,6 @@
         height: 100%;
         padding-left: 40px;
         padding-right: 40px;
-
         @media screen and (max-width: 479px) {
             padding-left: calc(20px + 1vw);
             padding-right: calc(20px + 1vw);
@@ -183,7 +161,6 @@
 .nav-menu {
     &__item:not(:last-child) {
         margin-bottom: 32px;
-
         @media screen and (max-width: 479px) {
             margin-bottom: calc(18px + 2vw);
         }
@@ -195,17 +172,14 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: $mainTitleColor;
-
         &:hover,
         &:focus {
             color: $accentColor;
         }
-
         @media screen and (max-width: 479px) {
             font-size: calc(18px + 4vw);
         }
     }
-
     &__link--activ {
         color: $accentColor;
     }
@@ -215,31 +189,26 @@
     @media screen and (max-width: 479px) {
         padding-left: 12px;
     }
-
     @media screen and (min-width: 768px) {
         display: none;
     }
 
     &__item:not(:last-child) {
         margin-bottom: 32px;
-
         @media screen and (max-width: 479px) {
             margin-bottom: calc(15px + 2vw);
         }
     }
-
     &__phone {
         font-weight: 500;
         font-size: 34px;
         line-height: 1.18;
         letter-spacing: 0.02em;
         color: $accentColor;
-
         @media screen and (max-width: 479px) {
             font-size: calc(15px + 3vw);
         }
     }
-
     &__email {
         font-weight: 500;
         font-size: 24px;
@@ -247,24 +216,20 @@
         letter-spacing: 0.02em;
 
         color: $mainTextColor;
-
         @media screen and (max-width: 479px) {
             font-size: calc(15px + 2vw);
         }
     }
 }
-
 .mobile-socials {
     display: flex;
     margin-top: 64px;
-
     @media screen and (max-width: 479px) {
         flex-wrap: wrap;
         margin-top: 40px;
         margin-left: -10px;
         margin-bottom: -10px;
     }
-
     &__item {
         @media screen and (max-width: 479px) {
             display: flex;
@@ -286,20 +251,16 @@
             &:nth-child(1):before {
                 background-image: url(../images/instagram-svgrepo-com.svg);
             }
-
             &:nth-child(2):before {
                 background-image: url(../images/twitter-svgrepo-com.svg);
             }
-
             &:nth-child(3):before {
                 background-image: url(../images/facebook-svgrepo-com.svg);
             }
-
             &:nth-child(4):before {
                 background-image: url(../images/linkedin-svgrepo-com.svg);
             }
         }
-
         @media screen and (min-width: 480px) {
             &:not(:last-child) {
                 padding-right: 10px;
@@ -308,7 +269,6 @@
             }
         }
     }
-
     &__link {
         font-weight: 500;
         font-size: 18px;
